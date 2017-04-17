@@ -4,6 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+//Angular Material
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MdCardModule} from '@angular/material';
+import {MdButtonModule} from '@angular/material';
+import {MdIconModule} from '@angular/material';
+
+import APP_ROUTES from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,28 +33,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'profile',
-        component: ProfileComponent
-      },
-      {
-        path: 'discover',
-        component: DiscoverComponent
-      },
-      {
-        path: '**',
-        component: NotFoundComponent
-      }
-    ])
+    RouterModule.forRoot(APP_ROUTES),
+    BrowserAnimationsModule,
+    MdCardModule, MdButtonModule, MdIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
