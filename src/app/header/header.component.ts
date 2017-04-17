@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer  } from '@angular/platform-browser';
+import { MdIconModule, MdIconRegistry } from '@angular/material';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+        'search',
+        sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/search.svg'));
+  }
 
   ngOnInit() {
   }

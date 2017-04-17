@@ -3,7 +3,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-const APP_ROUTES = [
+export const APP_ROUTES = [
     {
         path: '',
         component: HomeComponent
@@ -13,21 +13,16 @@ const APP_ROUTES = [
         component: HomeComponent
     },
     {
-        path: 'profile/:username',
-        component: ProfileComponent,
-        data: {
-            name: 'Sean',
-            age: 20
-        }
+        path: 'profiles/:username',
+        component: ProfileComponent
     },
     {
         path: 'discover',
         component: DiscoverComponent
-    },
+    }
+    ,
     {
         path: '**',
         component: NotFoundComponent
     }
 ]
-
-export default APP_ROUTES;

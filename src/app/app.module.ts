@@ -11,7 +11,7 @@ import {MdButtonModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
 import { MaterialModule } from '@angular/material';
 
-import APP_ROUTES from './app.routes';
+import { APP_ROUTES}  from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
