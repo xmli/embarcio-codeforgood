@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdCardModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
+import { MaterialModule } from '@angular/material';
 
 import APP_ROUTES from './app.routes';
 import { AppComponent } from './app.component';
@@ -35,7 +36,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpModule,
     RouterModule.forRoot(APP_ROUTES),
     BrowserAnimationsModule,
-    MdCardModule, MdButtonModule, MdIconModule
+    MaterialModule, MdCardModule, MdButtonModule, MdIconModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
