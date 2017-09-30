@@ -1,15 +1,15 @@
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { DiscoverComponent } from './discover/discover.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from "./login/login.component";
 
 export const APP_ROUTES = [
     {
-        path: '',
-        component: HomeComponent
+        path: 'login',
+        component: LoginComponent
     },
     {
-        path: 'home',
+        path: '',
         component: HomeComponent
     },
     {
@@ -17,10 +17,9 @@ export const APP_ROUTES = [
         component: ProfileComponent
     },
     {
-        path: 'discover',
-        component: DiscoverComponent
-    }
-    ,
+        path: 'login',
+        component: LoginComponent
+    },
     {
         path: '**',
         component: NotFoundComponent

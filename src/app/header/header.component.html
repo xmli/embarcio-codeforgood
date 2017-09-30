@@ -1,117 +1,31 @@
-<!-- Fixed navbar -->
-<!--<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" routerLink="/">Chronical</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
-        <li routerLinkActive="active"><a routerLink="discover">Discover</a></li>
-      </ul>
-      <md-icon svgIcon="search"></md-icon>
-      <md-input-container>
-        <input mdInput placeholder="Search">
-      </md-input-container>
-      <ul class="nav navbar-nav navbar-right">
-        <li routerLinkActive="active"><a routerLink="not-found">Notifications</a></li>
-        <li routerLinkActive="active"><a routerLink="profile">Profile</a></li>
-        <li routerLinkActive="active"><a routerLink="not-found">Settings</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
-
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" routerLink="/">Chronical</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
-        <li routerLinkActive="active"><a routerLink="discover">Discover</a></li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-          <!--<md-input-container>
-            <input mdInput>
-          </md-input-container>-->
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li routerLinkActive="active"><a routerLink="not-found">Notifications</a></li>
-        <li routerLinkActive="active"><a routerLink="profile">Profile</a></li>
-        <!--<li><p class="navbar-text">Already have an account?</p></li>-->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
-          <ul id="login-dp" class="dropdown-menu">
-            <li>
-              <div class="row">
-                  <div class="col-md-12">
-                    Login via
-                    <div class="social-buttons">
-                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                      <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                    </div>
-                                    or
-                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                        <div class="form-group">
-                          <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                        </div>
-                        <div class="form-group">
-                          <label class="sr-only" for="exampleInputPassword2">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                        </div>
-                        <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                          <input type="checkbox"> keep me logged-in
-                          </label>
-                        </div>
-                    </form>
-                  </div>
-                  <div class="bottom text-center">
-                    New here ? <a href="#"><b>Join Us</b></a>
-                  </div>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action1</a></li>
-            <li><a href="#">Action2</a></li>
-            <li><a href="#">Action3</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Account Settings</a></li>
-            <li class="divider"></li>
-            <li><a routerLink="logout">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<div class="navbar-holder">
+    <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="#"><img class="homeicon" src="../assets/embarc_icon.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+             <ul class="nav navbar-nav">
+                <li class="dropdown">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Journies<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                      <li><a  href="#">Journey 1</a></li>
+                      <li><a href="#">Journey 2</a></li>
+                      <li><a href="#">Journey 3</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Class Data</a></li>
+             </ul>
+             <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li><a href="../login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+             </ul>
+          </div>
+       </div>
+    </nav>
+ </div>
