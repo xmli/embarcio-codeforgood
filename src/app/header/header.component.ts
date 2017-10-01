@@ -14,8 +14,11 @@ export class HeaderComponent implements OnInit {
         'search',
         sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/search.svg'));
   }
+  ACTIVE_UID = '';
 
   ngOnInit() {
+  
   }
+
 
 }

@@ -10,25 +10,30 @@ import {MdCardModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
 import {MdIconModule} from '@angular/material';
 import { MaterialModule } from '@angular/material';
+import {MdSidenavModule} from '@angular/material';
 
 import { APP_ROUTES}  from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from "./login/login.component";
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { JourneyComponent } from './journey/journey.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     HomeComponent,
     ProfileComponent,
     NotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    SidenavComponent,
+    JourneyComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,7 @@ import { LoginComponent } from "./login/login.component";
     HttpModule,
     RouterModule.forRoot(APP_ROUTES),
     BrowserAnimationsModule,
-    MaterialModule, MdCardModule, MdButtonModule, MdIconModule 
+    MaterialModule, MdCardModule, MdButtonModule, MdIconModule, MdSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
